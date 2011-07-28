@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PicLists</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+      <h1 class="logo">PicLists</h1>
+      <div class="login">
+        <% if signed_in? %>
+          <%= image_tag current_user.image_url %>
+          <span><%= current_user.screen_name %></span>
+        <% else %> 
+          <%= link_to 'sign in with twitter', '/auth/twitter' %>
+          <%= link_to 'sign in with facebook', '/auth/facebook' %>
+        <% end %>
+      </div>
+    </header>   
+    <div id="main">
+      <ul class="box">
+      <% 15.times do %>
+      <li class="picbox">
+        <img class="picimg" src="http://farm5.static.flickr.com/4123/4918778144_0b63b10986.jpg" />
+        <p class="u_name">名無しさん</p>
+      </li> 
+      <% end %>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Tenderness";
+  src: url(font_path("tenderness.otf")) format("opentype");
+}
+@mixin box {
+  display: -webkit-box;
+  display: -moz-box;
+}
+@mixin box1 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  width: auto
+}
+@mixin box2 {
+  width: 335px;
+}
+@mixin boxalign_m {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+}
+@mixin itaric {
+  font-style: italic;
+}
+@mixin small {
+  font-size: 80%;
+}
+@mixin big {
+  font-size: 140%;
+  font-weight: bold;
+}
+@mixin maincolor {
+  color: #666;
+}
+@mixin linkcolor1 {
+  color: #D64E80;
+}
+@mixin linkcolor2 {
+  color: #E48AAB;
+}
+@mixin margin_t10 {
+  margin-top: 10px;
+}
+.clear {
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, font, img, strike, strong, sub, sup, tt, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tr, th, td, figure {
+  border: 0 none;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+* {
+  letter-spacing: 0;
+}
+html, body {
+  background-color: #FCFCFC;
+  @include maincolor;
+}
+ul {
+  list-style: none outside none;
+}
+a, a:visited {
+  @include linkcolor1;
+  text-decoration: underline;
+}
+a:hover, a:active {
+  @include linkcolor2;
+  text-decoration: underline;
+}
+a:active, a:focus {
+  outline: 0 none;
+}
+#container {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 70px;
+  @include box;
+  @include boxalign_m;
+}
+.logo {
+  font-family: "Tenderness";
+  font-size: 180%; 
+  font-weight: bold;
+  @include maincolor;
+  @include box1;
+}
+.login {
+  @include box2;
+}
+.login a {
+  margin-left: 7px;
+}
+.login img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+} 
+#main {
+  @include margin_t10;
+}
+.box {
+  @include margin_t10;
+}
+.picbox {
+  width: 210px;
+  border: 2px solid #C0C0C0;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  float: left;
+}
+li.picbox:nth-child(3n) {
+  margin-left: 0;
+}
+li.picbox:nth-child(3n+1) {
+  clear: both;
+}
+.picimg {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  position: relative; 
+}
+.u_name {
+  width: 200px;
+  @include small;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
