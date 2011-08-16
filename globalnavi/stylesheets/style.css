@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, pre, code, form, input, textarea, select, option, embed, object, p, table {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FEFEFE;
+    color: #666;
+    font: 14px Verdana,Arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Osaka,'ＭＳ Ｐゴシック',sans-serif;
+}
+h1, h2, h3 {
+    font-weight: normal;
+}
+h1{
+  font-size: 180%;
+}
+a, a:visited {
+    color: #4083A9;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #205F82;
+    text-decoration: underline;
+  }
+ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    margin: 0 auto;
+    width: 940px;
+    min-height:100%;
+    padding-top:75px;
+}
+#header {
+    height: 55px;
+    margin-bottom: 20px;
+    background: #333;
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2;
+}
+#main {
+    margin-bottom: 30px;
+}
+#footer {
+    width: 100%;
+    background: #333; 
+    height: 100px;
+}
+.hidden {
+    display: none;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+:first-child + html .clearfix {
+}
+.err_msg {
+    color: #D64E80;
+}
+/* header */
+#header a, #header a:visited {
+    color: #DFDFDF;
+    text-decoration: none;
+}
+#header a:hover, #header a:active {
+    color: #FFFFFF;
+   /*text-decoration: underline;*/
+    text-decoration: none;
+}
+.h_inner{
+  width:940px;
+  margin: 0 auto;
+}
+.logo {
+  font-family: 'Droid Serif', serif;
+  width:230px;
+  line-height:55px;
+  float:left;
+  color:#EFEFEF;
+}
+.navi {
+  float:left;
+  margin-left:20px;
+  line-height:55px;
+}
+.navi li{
+  float:left;
+  margin-right: 5px;
+  padding: 0 10px;
+}
+.selected {
+  background: #555;
+}
+.c_user {
+  float:right;
+}
+.c_user img{
+  padding: 10px 5px;
+  width: 35px;
+  vertical-align:middle;
+}
+/* -- header */
+.mgn_b10 {
+  margin-bottom: 20px;
+  display:block;
+}
+.button {
+  border: 1px solid #205F82;
+  background: #4083A9;
+  color: #FEFEFE;
+  padding: 0 10px;
+}
+

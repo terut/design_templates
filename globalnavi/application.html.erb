@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>globalnavi</title>
+  <%= csrf_meta_tag %>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700italic' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag 'style', :media => 'all' %>
+</head>
+<body>
+  <div id="header">
+    <div class="h_inner clearfix">
+      <h1 class="logo">Global Navi</h1>
+      <ul class="navi">
+        <li><a href="/">navi1</a></li> 
+        <li class="selected"><a href="/">navi2</a></li>
+        <li><a href="/">navi3</a></li>
+      </ul>
+      <div class="c_user">
+        <%= image_tag "default.png" %>
+        <a href="/"><%= login_user.account %></a> 
+      </div>  
+    </div>
+  </div>
+  <div id="container">
+    <div id="main">
+      <%= yield %>
+    </div>
+    <div id="shoulder"></div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>
