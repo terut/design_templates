@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/****************************************
+  Web Font
+    Tenderness
+    © dot colon
+    http://www.dotcolon.net
+*****************************************/
+@font-face {
+  font-family: 'Tenderness';
+  src: url(/fonts/tenderness.tof) format("opentype");
+}
+
+@mixin wfont {
+  font-family: 'Tenderness';
+}
+@mixin bold {
+  font-weight: bold;
+}
+@mixin darkbule {
+  color: #477a9b;
+}
+@mixin black {
+  color: #555;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+  display: block;
+}
+*{ letter-spacing: 0; }
+html, body {}
+ul { list-style: none; }
+code {
+  font-family: "Courier New", Courier, monospace;
+  @include darkbule; 
+  @include bold;
+}
+body{
+  background: #F7F7F7 url(/images/whitey.png) repeat;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: 
+      Verdana, Arial,
+      'ヒラギノ角ゴ Pro W3',
+      'Hiragino Kaku Gothic Pro',
+      Osaka,
+      'ＭＳ Ｐゴシック', 
+      sans-serif;
+  @include black;
+  position: relative;
+}
+

@@ -2,6 +2,11 @@
 require 'bundler'
 Bundler.require(:default)
 
-get '/' do
-  'Hello, world!!'
+get '/style.css' do
+  scss :stylesheet
 end
+
+get '/' do
+  slim :index
+end
+
