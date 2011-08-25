@@ -2,4 +2,4 @@
 .rvmrc
 Gemfile.lock
 vendor
-
+.sass-cache

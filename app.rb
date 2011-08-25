@@ -3,7 +3,8 @@ require 'bundler'
 Bundler.require(:default)
 
 get '/style.css' do
-  scss :stylesheet
+  content_type 'text/css', :charset => 'utf-8'
+  scss :style
 end
 
 get '/' do
